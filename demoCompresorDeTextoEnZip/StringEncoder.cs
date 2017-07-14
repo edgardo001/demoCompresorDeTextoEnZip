@@ -13,7 +13,7 @@ namespace demoCompresorDeTextoEnZip
     /// For me, the need came when I wanted to encode from DataTable to JSON.I was looking for a way to encode binary fields into strings and decode from string back to byte[].
     /// I therefore created two classes - one that wraps the above solution(when encoding from strings it's fine, because the lengths are always even), and another that handles byte[] encoding. I solved the uneven length problem by adding a single character that tells me if the original length of the binary array was odd ('1') or even ('0')
     ///
-    /// Traduccion:
+    /// Traduccion Español:
     /// Un refinamiento a la edición de JustinStolle (uso de BlockCopy de Eran Yogev).
     /// La solución propuesta es más rápida que la codificación.El problema es que no funciona para codificar arrays de bytes de longitud irregular.Como se da, se plantea una excepción fuera de línea.Aumentar la longitud por 1 deja un byte de arrastre al decodificar desde una cadena.
     /// Para mí, la necesidad llegó cuando quería codificar desde DataTable a JSON. Buscaba una forma de codificar campos binarios en cadenas y decodificar de cadena de nuevo a byte[].
